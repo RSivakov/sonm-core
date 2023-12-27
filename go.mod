@@ -4,7 +4,6 @@ go 1.13
 
 require (
 	bazil.org/fuse v0.0.0-20160811212531-371fbbdaa898
-	cloud.google.com/go v0.26.0 // indirect
 	github.com/BurntSushi/toml v0.3.1 // indirect
 	github.com/ContainX/docker-volume-netshare v0.0.0-20180128064639-3b432b74a4be
 	github.com/Masterminds/squirrel v0.0.0-20180612165926-7d201d09bfa8
@@ -24,19 +23,17 @@ require (
 	github.com/cdipaolo/goml v0.0.0-20161030204843-e2d8def04c9a
 	github.com/cespare/cp v1.1.1 // indirect
 	github.com/cheekybits/genny v1.0.0 // indirect
-	github.com/client9/misspell v0.3.4 // indirect
 	github.com/cnf/structhash v0.0.0-20170702194520-7710f1f78fb9
 	github.com/containerd/cgroups v0.0.0-20170714210333-6d5c608c203d
 	github.com/coreos/go-systemd v0.0.0-20170609144627-24036eb3df68
 	github.com/deckarep/golang-set v0.0.0-20180927150649-699df6a3acf6 // indirect
 	github.com/dickeyxxx/netrc v0.0.0-20150924214217-3acf1b3de25d // indirect
 	github.com/docker/distribution v2.7.0-rc.0+incompatible
-	github.com/docker/docker v0.0.0-20170608045038-cd35e4beee13
+	github.com/docker/docker v20.10.27+incompatible
 	github.com/docker/go-connections v0.4.0
 	github.com/docker/go-plugins-helpers v0.0.0-20180116160015-61cb8e233420
 	github.com/docker/go-units v0.3.3
 	github.com/docker/libkv v0.0.0-20170701232644-93ab0e6c056d
-	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7 // indirect
 	github.com/edsrzf/mmap-go v0.0.0-20170320065105-0bce6a688712 // indirect
 	github.com/ethereum/go-ethereum v0.0.0-20180929205331-b69942befeb9
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 // indirect
@@ -54,6 +51,7 @@ require (
 	github.com/golang/mock v1.0.0
 	github.com/golang/protobuf v1.2.0
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
+	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/gosuri/uilive v0.0.0-20170323041506-ac356e6e42cd // indirect
 	github.com/gosuri/uiprogress v0.0.0-20170224063937-d0567a9d84a1
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.0
@@ -88,8 +86,12 @@ require (
 	github.com/mattn/go-sqlite3 v1.11.0 // indirect
 	github.com/mitchellh/go-homedir v1.0.0
 	github.com/mitchellh/mapstructure v1.1.2
+	github.com/moby/sys/mount v0.3.3 // indirect
+	github.com/moby/sys/mountinfo v0.7.1 // indirect
+	github.com/moby/term v0.5.0 // indirect
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe
+	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/noxiouz/zapctx v0.0.0-20170511100814-b19b4472cfa5
 	github.com/olekukonko/tablewriter v0.0.0-20180506121414-d4647c9c7a84
 	github.com/onsi/ginkgo v1.8.0 // indirect
@@ -109,7 +111,6 @@ require (
 	github.com/rcrowley/go-metrics v0.0.0-20180503174638-e2704e165165
 	github.com/rjeczalik/notify v0.9.2 // indirect
 	github.com/rs/cors v0.0.0-20180826180256-dc7332ab32be // indirect
-	github.com/seccomp/libseccomp-golang v0.9.1
 	github.com/serialx/hashring v0.0.0-20170811022404-6a9381c5a83e
 	github.com/shirou/gopsutil v0.0.0-20181107111621-48177ef5f880
 	github.com/shirou/w32 v0.0.0-20160930032740-bb4de0191aa4 // indirect
@@ -135,14 +136,11 @@ require (
 	go.uber.org/atomic v0.0.0-20170719224650-70bd1261d36b
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.9.1
-	golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c
-	golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3 // indirect
-	golang.org/x/net v0.0.0-20190503192946-f4e77d36d62c
-	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be // indirect
-	golang.org/x/sync v0.0.0-20190423024810-112230192c58
-	golang.org/x/sys v0.0.0-20190508220229-2d0786266e9c
-	golang.org/x/text v0.3.2 // indirect
-	golang.org/x/tools v0.0.0-20190114222345-bf090417da8b // indirect
+	golang.org/x/crypto v0.1.0
+	golang.org/x/net v0.1.0
+	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
+	golang.org/x/sys v0.1.0
+	golang.org/x/time v0.5.0 // indirect
 	google.golang.org/appengine v1.1.0 // indirect
 	google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8 // indirect
 	google.golang.org/grpc v1.14.0
@@ -152,7 +150,7 @@ require (
 	gopkg.in/oleiade/lane.v1 v1.0.0
 	gopkg.in/urfave/cli.v1 v1.20.0 // indirect
 	gopkg.in/yaml.v2 v2.2.1
-	honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099 // indirect
+	gotest.tools/v3 v3.5.1 // indirect
 )
 
 replace github.com/Sirupsen/logrus v1.1.0 => github.com/sirupsen/logrus v1.1.0
